@@ -5,6 +5,7 @@ if [[ $(id -u) -ne 0 ]]; then
         exit
 fi
 tar -xvf weixin-2.1.9.tar.gz -C /opt
+ln -sf /opt/weixin/weixin /usr/bin/weixin
 /usr/bin/cp lsb-release lsb-release-ukui /etc
 /usr/bin/cp libactivation.so /usr/lib/
 /usr/bin/cp .kyact /etc
