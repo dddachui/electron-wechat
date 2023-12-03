@@ -26,7 +26,8 @@ dpkg-deb -e xxx.deb /tmp/wecaht/DEBIAN
 ```
 
 # 安装方法
-
+本体安装包链接 链接：https://pan.baidu.com/s/1-OjPt5uRrjdaa_ByOTQibA?pwd=1234 
+将下载的tar.gz压缩包也放到项目里面
 ```
 sh install.sh
 ```
