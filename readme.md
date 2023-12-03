@@ -6,6 +6,8 @@
 
 3. 脚本里面桌面图标还没处理好,在桌面可能不显示图标,手动搞搞
 
+4. 如果root用户想启动微信，需要修改启动命令，在命令后加--no-sandbox
+
 # 来源
 
 项目里面所有涉及的weixin文件均来自于openkylin下载的deb包，进行解压整理，方法如下
@@ -23,3 +25,19 @@ mkdir /tmp/wechat
 dpkg-deb -e xxx.deb /tmp/wecaht/DEBIAN
 ```
 
+# 安装方法
+
+```
+sh install.sh
+```
+
+# 启动
+- 命令行输入
+```
+weixin
+```
+- 使用图标启动 $user换成具体的用户名(root除外)
+```
+cp weixin.desktop ~/Desktop
+chown $user:$user ~/Desktop/weixin.desktop
+```
