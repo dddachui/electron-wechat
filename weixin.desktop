@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name[tr]=weixin
+Name[zh_CN]=微信
+Exec=/opt/weixin/weixin %U
+Terminal=false
+Type=Application
+Icon=weixin
+StartupWMClass=weixin
+Comment=微信桌面版
+Categories=Utility;
